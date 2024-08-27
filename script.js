@@ -62,6 +62,109 @@ console.log(typeof nullVar); // object
 console.log(typeof strThatHasBackTick); // string
 console.log(typeof num2); // number
 
+// Type Conversion
+console.log("********** ********** **********");
+console.log("Type Conversion: ");
 
+let booleanToString = true;
+console.log("booleanToString: " + typeof booleanToString);
+let convertedBooleanToString = String(booleanToString);
+console.log("convertedBooleanToString: " + typeof convertedBooleanToString);
+let stringToInteger = "555";
+console.log("stringToInteger: " + typeof stringToInteger);
+let convertedStringToInteger = Number(stringToInteger);
+console.log("convertedStringToInteger: " + typeof convertedStringToInteger);
+
+// Boolean Conversion
+let boolean0 = 0;
+let boolean1 = 1;
+
+console.log(Boolean(boolean0));
+console.log(Boolean(boolean1));
+
+// Alert, Prompt, Confirm
+
+// commented out the alerts and prompt
+
+// Alert shows a message.
+
+// alert("Sample Alert");
+
+
+// Prompt shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
+
+// let resultPrompt = prompt("This is a Sample Prompt","The Default value is required");
+// alert(`Hello ${resultPrompt}`);
+// let samplePrompt = prompt("Test", "");
+
+
+// Confirm shows a message and waits for the user to press “OK” or “Cancel”.It returns true for OK and false for Cancel/Esc.
+
+// let isBoss = confirm("Are you the boss? ");
+// alert(isBoss);
+
+
+// Math Operators
+console.log("********** ********** **********");
+console.log("Math Operations");
+
+// Unary 
+// This Unary operand negates the unary variable 
+console.log("Unary");
+let unaryNegative = 1;
+unaryNegative = - unaryNegative; // -1
+console.log("unaryNegative: " + unaryNegative);
+
+let unaryPositive = -1;
+unaryPositive = - unaryPositive;
+console.log("unaryPositive: " + unaryPositive);
+
+let unaryStringToNumber  = "1"
+console.log("Before Conversion unaryStringToNumber " + typeof unaryStringToNumber + " " +  unaryStringToNumber);
+
+unaryStringToNumber = + unaryStringToNumber;
+console.log("unaryStringToNumber " + typeof unaryStringToNumber + " " +  unaryStringToNumber)
+
+console.log("Binary");
+
+// Other Samples of Unary Operands ++x, x++, --x, x--, !bool, ~bitwise , typeof, instanceof
+
+// Binary operands
+
+let a = 10;
+let b = 3;
+
+let sum = a + b;         // 13
+let difference = a - b;  // 7
+let product = a * b;     // 30
+let quotient = a / b;    // 3.333...
+let remainder = a % b;   // 1
+let exponent = a ** b;   // 1000 (10^3)
+
+let x = 5;
+let y = 10;
+
+console.log(x > y);      // false
+console.log(x < y);      // true
+console.log(x >= y);     // false
+console.log(x <= y);     // true
+console.log(x == y);     // false
+console.log(x != y);     // true
+console.log(x === y);    // false (strict equality)
+console.log(x !== y); 
+
+let isItTrue = true;
+let isItFalse = false;
+
+console.log(isItTrue && isItFalse);  // false (AND)
+console.log(isItTrue || isItFalse);  // true (OR)
+console.log(!isItTrue);            // false (NOT, unary but often paired with binary logic
+
+let counter  = 1;
+let counter2  = 1;
+// the Postfix ++ return the value first then increment
+console.log(counter++);
+// the Prefix ++ increment first then return the value
+console.log(++counter2);
 
 
